@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>QuoteSnap — Voice to Quote for Tradespeople</title>
+  <meta name="description" content="Turn voice into professional quotes and invoices in seconds. Built for tradespeople who'd rather work than type." />
+  <meta name="theme-color" content="#0c0c1a" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23f59e0b'/><text x='16' y='22' font-size='18' font-weight='800' text-anchor='middle' fill='%230c0c1a'>QS</text></svg>" />
+</head>
+<body>
+  <!-- Main app mount -->
+  <div id="app"></div>
+
+  <!-- Toast container (used by app shell too but kept here for landing) -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script>
+    // Polyfill for older browsers
+    if (!window.SpeechRecognition && window.webkitSpeechRecognition) {
+      window.SpeechRecognition = window.webkitSpeechRecognition;
+    }
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

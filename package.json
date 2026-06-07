@@ -1,0 +1,11 @@
+{
+  "name": "quotesnap",
+  "version": "1.0.0",
+  "description": "QuoteSnap — Voice-to-Quote & Invoicing for Tradespeople",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'Static site - nothing to build'"
+  },
+  "keywords": ["quotes", "invoicing", "tradespeople", "voice"],
+  "license": "MIT"
+}
